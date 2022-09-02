@@ -2307,15 +2307,7 @@ footer .container {
 }
 
 .contentArtikel .content {
-    width: 65%;
-}
-
-.contentArtikel .detailContent {
-    width: 35%;
-    top: 12vh;
-    position: sticky;
-    padding-left: 20px;
-    align-self: flex-start;
+    width: 80%;
 }
 
 .content .titleArtikel {
@@ -2337,7 +2329,7 @@ footer .container {
 }
 
 .content .kategori {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .content .kategori .perKategori:first-child {
@@ -2345,11 +2337,12 @@ footer .container {
 }
 
 .content .kategori .perKategori {
-    margin: 5px;
+    margin: 3px 2px;
     color: #fff;
     padding: 6px;
     font-weight: 600;
     font-size: .8rem;
+    display: inline-block;
     border-radius: 7px;
     background-color: #2EB5C0;
 }
@@ -2391,78 +2384,6 @@ footer .container {
 }
 
 
-
-.detailContent .author {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    border: 2px solid #e4e4e7;
-    border-radius: 10px;
-}
-
-.detailContent .author:hover h2 {
-    color: #0175F4;
-}
-
-.detailContent .author img {
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-.detailContent .author h2 {
-    font-size: 1.3rem;
-    color: #302f2f;
-}
-
-.detailContent .author p {
-    font-size: .9rem;
-    color: #302f2f;
-}
-
-.artikelTerbarutitle {
-    font-size: 1.2rem;
-    margin: 20px 0 15px 0;
-}
-
-.artikelTerbaru {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.artikelTerbaru .perArtikel {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 5px 0;
-}
-
-.artikelTerbaru .perArtikel img {
-    width: 30%;
-    height: 60px;
-    border-radius: 7px;
-    object-fit: cover;
-    margin-right: 10px;
-}
-
-.artikelTerbaru .perArtikel:hover p {
-    color: #0175F4;
-}
-
-.artikelTerbaru .perArtikel p {
-    width: 70%;
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.4rem;
-    color: #434856;
-    text-overflow: ellipsis;
-    min-height: 3.5rem;
-    overflow: hidden;
-}
 
 
 .share {
@@ -2518,11 +2439,50 @@ footer .container {
 }
 
 
+.contentArtikel .author {
+    display: flex;
+    padding-top: 25px;
+}
+
+.contentArtikel .author img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.contentArtikel .author .authorDetail {
+    width: 80%;
+    margin-left: 20px;
+}
+
+
+.contentArtikel .author .authorDetail h3 {
+    font-size: 1.3rem;
+
+}
+
+.contentArtikel .author .authorDetail h3 a {
+    color: #302f2f;
+}
+
+.contentArtikel .author .authorDetail h3 a:hover {
+    color: #007AB9;
+    text-decoration: underline;
+}
+
+.contentArtikel .author .authorDetail span {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+
+
 .containerArtikelLainnya {
     margin: 30px 0 50px 0;
 }
 
-.containerArtikelLainnya h4 {
+.containerArtikelLainnya h3 {
     font-size: 1.3rem;
     margin-bottom: 20px;
 
@@ -2541,7 +2501,6 @@ footer .container {
 .containerArtikelLainnya .artikelLainnya .perArtikelLainnya {
     padding: 5px;
     width: calc(100%/4);
-
 }
 
 .containerArtikelLainnya .artikelLainnya .perArtikelLainnya img {
@@ -2553,7 +2512,7 @@ footer .container {
 
 .containerArtikelLainnya .artikelLainnya .perArtikelLainnya p {
     font-weight: 500;
-    font-size: .8rem;
+    font-size: .9rem;
     line-height: 1.1rem;
     color: #434856;
     text-overflow: ellipsis;
@@ -2598,7 +2557,7 @@ footer .container {
     padding: .6rem .8rem;
 }
 
-.rekomendasiArtikel .perArtikel h3:hover a {
+.rekomendasiArtikel .perArtikel h3 a:hover {
     color: #0175F4;
 }
 
@@ -2606,7 +2565,7 @@ footer .container {
     color: #302f2f;
 }
 
-.rekomendasiArtikel .perArtikel .author {
+.rekomendasiArtikel .perArtikel .authorRekomendasiArtikel {
     display: flex;
     padding-top: 30px;
     padding-left: .8rem;
@@ -2614,30 +2573,30 @@ footer .container {
     align-items: center;
 }
 
-.rekomendasiArtikel .perArtikel .author img {
+.rekomendasiArtikel .perArtikel .authorRekomendasiArtikel img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     object-fit: cover;
 }
 
-.rekomendasiArtikel .perArtikel .author .detailAuthor {
+.rekomendasiArtikel .perArtikel .authorRekomendasiArtikel .detailAuthor {
     margin-left: 20px;
 }
 
-.rekomendasiArtikel .perArtikel .author .detailAuthor a {
+.rekomendasiArtikel .perArtikel .authorRekomendasiArtikel .detailAuthor a {
     line-height: 15px;
     color: #302f2f;
     font-weight: 600;
 
 }
 
-.rekomendasiArtikel .perArtikel .author .detailAuthor a:hover {
+.rekomendasiArtikel .perArtikel .authorRekomendasiArtikel .detailAuthor a:hover {
     text-decoration: underline;
     color: #007AB9;
 }
 
-.rekomendasiArtikel .perArtikel .author .detailAuthor p {
+.rekomendasiArtikel .perArtikel .authorRekomendasiArtikel .detailAuthor p {
     font-size: .8rem;
 }
 
@@ -3865,6 +3824,16 @@ footer .container {
 
 }
 
+@media(max-width: 1100px) {
+    .rekomendasiArtikel .perArtikel {
+        width: calc(93%/2);
+    }
+
+    .contentArtikel .content {
+        width: 100%;
+    }
+}
+
 @media(max-width: 1000px) {
     section {
         padding: 0 50px;
@@ -4661,6 +4630,30 @@ footer .container {
         height: 250px;
     }
 
+
+
+    .containerArtikelLainnya .artikelLainnya {
+        flex-wrap: wrap;
+    }
+
+    .containerArtikelLainnya .artikelLainnya .perArtikelLainnya {
+        width: calc(100%/2);
+    }
+
+    .containerArtikelLainnya .artikelLainnya .perArtikelLainnya img {
+        height: 120px;
+    }
+
+    .rekomendasiArtikel .perArtikel {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .contentArtikel .author .authorDetail p {
+        display: none;
+
+    }
+
     /* Per Artikel */
 
 
@@ -5006,6 +4999,20 @@ footer .container {
     }
 
     /* Detail Event End */
+
+
+
+    /* Detail Artikel */
+    .content .identitas {
+        flex-wrap: wrap;
+    }
+
+    .content .identitas .perIdentitas {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Detail Artikel */
 
 }
 
@@ -5397,12 +5404,65 @@ footer .container {
 
     /* Detail Event */
 
+
+    /* Detail Artikel */
+    .containerArtikelLainnya .artikelLainnya .perArtikelLainnya {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .containerArtikelLainnya .artikelLainnya .perArtikelLainnya p {
+        font-size: 1rem;
+        line-height: 23px;
+    }
+
+    .contentArtikel .author .authorDetail {
+        margin-left: 15px;
+    }
+
+    .contentArtikel .author img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contentArtikel .author .authorDetail h3 {
+        font-size: 1.1rem;
+        line-height: 15px;
+    }
+
+    .contentArtikel .author .authorDetail span {
+        font-size: .8rem;
+    }
+
+
+    .containerArtikelLainnya .artikelLainnya .perArtikelLainnya img {
+        height: 150px;
+    }
+
+    .containerArtikelLainnya .artikelLainnya .perArtikelLainnya p {
+        font-size: .9rem;
+        line-height: 1.3rem;
+
+    }
+
+
+    /* Detail Artikel */
+
 }
 
 
 
 
 @media(max-width: 350px) {
+
+    form .form-group label {
+        font-size: .9rem;
+    }
+
+    form button {
+        padding: 8px 0;
+        font-size: 1rem;
+    }
 
     .navbarMobile .perNavbarMobile h3 {
         font-size: .7rem;
@@ -5566,19 +5626,6 @@ footer .container {
 
 
     /* Login */
-
-    /* .containerLogin .container h1 {
-        font-size: 1.5rem;
-    }
-
-    .containerLogin .container .login h2 {
-        font-size: 1.3rem;
-    }
-
-    .containerLogin .container .login p {
-        font-size: 1rem;
-        line-height: 22px;
-    } */
     .containerLogin .container .login form .form-info label,
     .containerLogin .container .login form .form-info a {
         font-size: .9rem;
@@ -5627,13 +5674,52 @@ footer .container {
         padding: 5px;
     }
 
-
-
-
-
-
     /* Halaman Detail Event End */
 
+    /* Detail Artikel */
+    .share h4 {
+        font-size: .9rem;
+    }
+
+
+    .share .sosialMedia {
+        margin-left: 5px;
+    }
+
+    .share .sosialMedia .perSosialMedia {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+
+    .rekomendasiArtikel .perArtikel h3 {
+        font-size: 1rem;
+        padding: .4rem .5rem;
+    }
+
+    .rekomendasiArtikel .perArtikel .authorRekomendasiArtikel img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .rekomendasiArtikel .perArtikel .authorRekomendasiArtikel .detailAuthor {
+        margin-left: 10px;
+    }
+
+    .rekomendasiArtikel .perArtikel .authorRekomendasiArtikel .detailAuthor a {
+        font-size: .9rem;
+    }
+
+    .rekomendasiArtikel .perArtikel .authorRekomendasiArtikel .detailAuthor p {
+        font-size: .7rem;
+    }
+
+    .contentArtikel {
+        padding-bottom: 25px;
+    }
+
+    /* Detail Artikel */
 
 }
 
@@ -5696,11 +5782,14 @@ footer .container {
         margin: 10px 5px;
     }
 
+    .footer .box .sosmed .perSosmed a {
+        font-size: 1em;
+    }
+
 
     /* Media Partner Start */
     .eventMediaPartner .container button {
         font-size: .9rem;
-        /* padding: 10px 20px; */
     }
 
     .tahapanUpload .container {
