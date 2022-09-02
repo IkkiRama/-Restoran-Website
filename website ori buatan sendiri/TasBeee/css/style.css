@@ -128,6 +128,56 @@ header nav ul li a:hover {
 }
 
 
+
+form .form-group {
+    width: 100%;
+}
+
+form .form-group label {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+form .form-group textarea {
+    height: 150px;
+}
+
+form .form-group textarea,
+form .form-group input {
+    width: 100%;
+    resize: none;
+    cursor: text;
+    padding: 10px 20px;
+    margin: 10px 0;
+    color: #302f2f;
+    font-size: .9rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    border: 1px solid #e4e4e7;
+    background-color: #fff;
+    letter-spacing: .5px;
+}
+
+form .form-group textarea:focus,
+form .form-group input:focus {
+    outline: 2px solid #0176f4bd;
+}
+
+form button:focus {
+    outline: 2px solid #63aeffbd;
+}
+
+form button {
+    width: 100%;
+    color: #fff;
+    padding: 12px 0;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+    background-color: #1352FF;
+}
+
+
 .navbarMobile {
     width: 100%;
     height: 60px;
@@ -231,7 +281,7 @@ header nav ul li a:hover {
     align-items: center;
     justify-content: center;
     /* position: relative; */
-    background-image: url("../img/paperpilar/hero-pattern-bg.png");
+    background-image: url("../img/home/hero-pattern-bg.png");
     background-size: cover;
     background-position: center;
     object-fit: cover;
@@ -703,7 +753,7 @@ header nav ul li a:hover {
 .join {
     width: 100%;
     height: 100%;
-    background: url("../img/bg-5.webp");
+    background: url("../img/home/bg-5.webp");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -970,7 +1020,7 @@ footer .container {
 
 .Event .sorting {
     width: 30%;
-    top: 100px;
+    top: 12vh;
     position: sticky;
     align-self: flex-start;
 }
@@ -1188,8 +1238,12 @@ footer .container {
     margin-bottom: 30px;
 }
 
-.keteranganProgram span {
+.keteranganProgram span.active {
     color: #3629a7;
+}
+
+.keteranganProgram span {
+    color: #302f2f;
     position: relative;
     padding: 0 20px;
     font-weight: 600;
@@ -2147,23 +2201,18 @@ footer .container {
     background-image: linear-gradient(180deg, #f3f4f9, #f3f4f9, #fff 75%);
 }
 
-.rekomendasiArtikel .container .perArtikel,
 .artikel .container .perArtikel {
     width: calc(90%/3);
     margin: 15px 10px;
-    /* padding: 20px; */
     border-radius: 10px;
     border: 2px solid #e4e4e7;
     background-color: #fff;
-    /* box-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.1); */
 }
 
-.rekomendasiArtikel .container .perArtikel:hover h2,
 .artikel .container .perArtikel:hover h2 {
     color: #3629a7;
 }
 
-.rekomendasiArtikel .container .perArtikel img,
 .artikel .container .perArtikel img {
     width: 100%;
     height: 250px;
@@ -2173,7 +2222,6 @@ footer .container {
 }
 
 
-.rekomendasiArtikel .container .perArtikel h2,
 .artikel .container .perArtikel h2 {
     font-size: 1.3rem;
     line-height: 27px;
@@ -2183,28 +2231,23 @@ footer .container {
     padding: 0 10px;
 }
 
-.rekomendasiArtikel .container .perArtikel p,
 .artikel .container .perArtikel p {
     color: #302f2f;
     font-size: .9rem;
-    /* font-weight: 500; */
     padding: 0 10px;
     margin-bottom: 20px;
 }
 
 
-.rekomendasiArtikel .container .perArtikel .btn,
 .artikel .container .perArtikel .btn {
     margin-bottom: 15px;
     width: 100%;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 }
 
 
 
-.rekomendasiArtikel .container .perArtikel .btn button,
 .artikel .container .perArtikel .btn button {
     width: 95%;
     border-radius: 7px;
@@ -2252,84 +2295,350 @@ footer .container {
 
 /* Halaman Per Artikel start */
 .contentArtikel {
-    /* width: 60%; */
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding-top: 120px;
-    padding-bottom: 100px;
-    /* padding: 150px 250px 200px 250px; */
+    padding-bottom: 75px;
 }
+
 
 .contentArtikel .container {
-    width: 60%;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
 }
 
-.contentArtikel .container .titleArtikel {
+.contentArtikel .content {
+    width: 65%;
+}
+
+.contentArtikel .detailContent {
+    width: 35%;
+    top: 12vh;
+    position: sticky;
+    padding-left: 20px;
+    align-self: flex-start;
+}
+
+.content .titleArtikel {
     font-size: 2rem;
     font-weight: 700;
     line-height: 40px;
     color: #302f2f;
 }
 
-.contentArtikel .container .writer {
+.content .writer {
     font-size: 1rem;
     color: #302f2f;
-    margin: 20px 0;
+    margin: 20px 0 10px 0;
 }
 
-.contentArtikel .container .thumbnail {
+.content .writer a {
+    color: #0175F4;
+    font-weight: 600;
+}
+
+.content .kategori {
+    margin-bottom: 20px;
+}
+
+.content .kategori .perKategori:first-child {
+    margin-left: 0;
+}
+
+.content .kategori .perKategori {
+    margin: 5px;
+    color: #fff;
+    padding: 6px;
+    font-weight: 600;
+    font-size: .8rem;
+    border-radius: 7px;
+    background-color: #2EB5C0;
+}
+
+
+
+
+.content .thumbnail {
     width: 100%;
     height: 350px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
-.contentArtikel .container h3 {
+.content h3 {
     font-size: 1.5rem;
     color: #302f2f;
 }
 
-.contentArtikel .container p {
+.content p {
     font-size: 1rem;
     margin: 10px 0;
     color: #302f2f;
     line-height: 30px;
 }
 
+.content .identitas {
+    display: flex;
+
+}
+
+.content .identitas .perIdentitas:first-child {
+    margin-left: 0;
+}
+
+.content .identitas .perIdentitas {
+    width: 50%;
+    margin: 0 10px;
+}
+
+
+
+.detailContent .author {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #e4e4e7;
+    border-radius: 10px;
+}
+
+.detailContent .author:hover h2 {
+    color: #0175F4;
+}
+
+.detailContent .author img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.detailContent .author h2 {
+    font-size: 1.3rem;
+    color: #302f2f;
+}
+
+.detailContent .author p {
+    font-size: .9rem;
+    color: #302f2f;
+}
+
+.artikelTerbarutitle {
+    font-size: 1.2rem;
+    margin: 20px 0 15px 0;
+}
+
+.artikelTerbaru {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.artikelTerbaru .perArtikel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.artikelTerbaru .perArtikel img {
+    width: 30%;
+    height: 60px;
+    border-radius: 7px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.artikelTerbaru .perArtikel:hover p {
+    color: #0175F4;
+}
+
+.artikelTerbaru .perArtikel p {
+    width: 70%;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: #434856;
+    text-overflow: ellipsis;
+    min-height: 3.5rem;
+    overflow: hidden;
+}
+
+
+.share {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: 75px;
+    border-top: 2px solid #e4e4e7;
+    border-bottom: 2px solid #e4e4e7;
+}
+
+.share h4 {
+    font-weight: 600;
+}
+
+
+
+
+.share .sosialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+}
+
+.share .sosialMedia .perSosialMedia {
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.3rem;
+}
+
+
+.whatsapp {
+    background-color: #25D366;
+}
+
+.facebook {
+    background-color: #3B5998;
+}
+
+.twitter {
+    background-color: #55ACEE;
+}
+
+.linkedin {
+    background-color: #007AB9;
+}
+
+
+.containerArtikelLainnya {
+    margin: 30px 0 50px 0;
+}
+
+.containerArtikelLainnya h4 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+
+}
+
+.containerArtikelLainnya .artikelLainnya {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerArtikelLainnya .artikelLainnya .perArtikelLainnya:hover p {
+    color: #007AB9;
+}
+
+.containerArtikelLainnya .artikelLainnya .perArtikelLainnya {
+    padding: 5px;
+    width: calc(100%/4);
+
+}
+
+.containerArtikelLainnya .artikelLainnya .perArtikelLainnya img {
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.containerArtikelLainnya .artikelLainnya .perArtikelLainnya p {
+    font-weight: 500;
+    font-size: .8rem;
+    line-height: 1.1rem;
+    color: #434856;
+    text-overflow: ellipsis;
+    min-height: 3.5rem;
+    overflow: hidden;
+}
 
 
 
 
 .rekomendasiArtikel {
     width: 100%;
-    padding-top: 100px;
     padding-bottom: 100px;
-    background-color: #eff2f6;
-}
-
-.rekomendasiArtikel .container .title {
-    width: 100%;
-    font-size: 2rem;
-    color: #302f2f;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 50px;
 }
 
 .rekomendasiArtikel .container {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.rekomendasiArtikel .perArtikel {
+    width: calc(93%/3);
+    border-radius: 7px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    padding-bottom: 20px;
+    margin: 20px 10px;
+}
+
+.rekomendasiArtikel .perArtikel .thumbnail {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    object-fit: cover;
+}
+
+.rekomendasiArtikel .perArtikel h3 {
+    font-size: 1.2rem;
+    padding: .6rem .8rem;
+}
+
+.rekomendasiArtikel .perArtikel h3:hover a {
+    color: #0175F4;
+}
+
+.rekomendasiArtikel .perArtikel h3 a {
+    color: #302f2f;
+}
+
+.rekomendasiArtikel .perArtikel .author {
+    display: flex;
+    padding-top: 30px;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    align-items: center;
+}
+
+.rekomendasiArtikel .perArtikel .author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.rekomendasiArtikel .perArtikel .author .detailAuthor {
+    margin-left: 20px;
+}
+
+.rekomendasiArtikel .perArtikel .author .detailAuthor a {
+    line-height: 15px;
+    color: #302f2f;
+    font-weight: 600;
+
+}
+
+.rekomendasiArtikel .perArtikel .author .detailAuthor a:hover {
+    text-decoration: underline;
+    color: #007AB9;
+}
+
+.rekomendasiArtikel .perArtikel .author .detailAuthor p {
+    font-size: .8rem;
 }
 
 
@@ -2470,7 +2779,7 @@ footer .container {
     width: 40%;
     height: 100%;
     border-radius: 10px;
-    background-image: url("../img/paperpilar/calendar-works.jpg");
+    background-image: url("../img/calendar-works.jpg");
     background-position: center;
     background-size: cover;
     object-fit: cover;
@@ -2636,7 +2945,7 @@ footer .container {
 .detailEvent .container .detailHarga {
     width: 30%;
     position: sticky;
-    top: 100px;
+    top: 12vh;
     align-self: flex-start;
 }
 
@@ -3502,10 +3811,6 @@ footer .container {
 
 
     /* Per Artikel */
-    .contentArtikel .container {
-        width: 80%;
-    }
-
     .contentArtikel .container .thumbnail {
         height: 270px;
     }
@@ -3710,12 +4015,10 @@ footer .container {
     }
 
 
-    .rekomendasiArtikel .container .perArtikel,
     .artikel .container .perArtikel {
         width: calc(90%/2);
     }
 
-    .rekomendasiArtikel .container .perArtikel img,
     .artikel .container .perArtikel img {
         height: 300px;
         margin-bottom: 10px;
@@ -4001,7 +4304,6 @@ footer .container {
 
 
     /* Halaman Artikel  start */
-    .rekomendasiArtikel .container .perArtikel img,
     .artikel .container .perArtikel img {
         height: 220px;
     }
@@ -4260,7 +4562,6 @@ footer .container {
         height: 100px;
     }
 
-    .rekomendasiArtikel .container .perArtikel,
     .artikel .container .perArtikel {
         width: 80%;
         margin: 0;
@@ -4268,7 +4569,6 @@ footer .container {
     }
 
 
-    .rekomendasiArtikel .container .perArtikel img,
     .artikel .container .perArtikel img {
         height: 300px;
     }
@@ -4357,10 +4657,6 @@ footer .container {
 
 
     /* Per Artikel */
-    .contentArtikel .container {
-        width: 100%;
-    }
-
     .contentArtikel .container .thumbnail {
         height: 250px;
     }
@@ -4522,7 +4818,6 @@ footer .container {
     }
 
 
-    .rekomendasiArtikel .container .perArtikel,
     .artikel .container .perArtikel {
         width: 90%;
     }
@@ -4659,12 +4954,10 @@ footer .container {
     }
 
 
-    .rekomendasiArtikel .container .perArtikel,
     .artikel .container .perArtikel {
         width: 100%;
     }
 
-    .rekomendasiArtikel .container .perArtikel img,
     .artikel .container .perArtikel img {
         height: 250px;
     }
@@ -4827,12 +5120,6 @@ footer .container {
 
     .contentArtikel .container h3 {
         font-size: 1.3rem;
-    }
-
-
-    .rekomendasiArtikel .container .title {
-        font-size: 1.5rem;
-        margin-bottom: 30px;
     }
 
     /* Per Artikel */
@@ -5226,17 +5513,14 @@ footer .container {
     }
 
 
-    .rekomendasiArtikel .container .perArtikel h2,
     .artikel .container .perArtikel h2 {
         font-size: 1.2rem;
     }
 
-    .rekomendasiArtikel .container .perArtikel p,
     .artikel .container .perArtikel p {
         font-size: .9rem;
     }
 
-    .rekomendasiArtikel .container .perArtikel .btn button,
     .artikel .container .perArtikel .btn button {
         font-size: .8rem;
         padding: 8px 0;
@@ -5460,12 +5744,10 @@ footer .container {
     }
 
 
-    .rekomendasiArtikel .container .perArtikel p,
     .artikel .container .perArtikel p {
         font-size: .8rem;
     }
 
-    .rekomendasiArtikel .container .perArtikel img,
     .artikel .container .perArtikel img {
         height: 150px;
     }
@@ -5534,12 +5816,6 @@ footer .container {
 
     .contentArtikel .container .thumbnail {
         height: 200px;
-    }
-
-
-    .rekomendasiArtikel .container .title {
-        font-size: 1.3rem;
-        margin-bottom: 10px;
     }
 
     /* Per Artikel */

@@ -217,7 +217,7 @@
             <div class="program">
 
                 <div class="keteranganProgram">
-                    <span class="indikatorMasihBerlangsung">Masih Berlangsung</span>
+                    <span class="indikatorMasihBerlangsung active">Masih Berlangsung</span>
                     <span class="indikatorSudahBerakhir">Sudah Berakhir</span>
                 </div>
 
@@ -667,35 +667,30 @@
 
 
         // untuk berpindah halaman antara event yang masih ada dan sudah berlalu
-        let indikatorSudahBerakhir = document.querySelectorAll(".indikatorSudahBerakhir")
-        let indikatorMasihBerlangsung = document.querySelectorAll(".indikatorMasihBerlangsung")
+        let indikatorSudahBerakhir = document.querySelector(".indikatorSudahBerakhir")
+        let indikatorMasihBerlangsung = document.querySelector(".indikatorMasihBerlangsung")
 
-        let sudahBerakhir = document.querySelectorAll(".sudahBerakhir")
-        let masihBerlangsung = document.querySelectorAll(".masihBerlangsung")
+        let sudahBerakhir = document.querySelector(".sudahBerakhir")
+        let masihBerlangsung = document.querySelector(".masihBerlangsung")
 
-        indikatorSudahBerakhir.forEach((ISB) => {
 
-            ISB.addEventListener("click", () => {
-                masihBerlangsung.forEach((MB) => {
-                    MB.style.display = "none"
-                })
-                sudahBerakhir.forEach((SB) => {
-                    SB.style.display = "flex"
-                })
-            })
+        indikatorSudahBerakhir.addEventListener("click", (e) => {
+            masihBerlangsung.style.display = "none"
+            sudahBerakhir.style.display = "flex"
+            if (indikatorSudahBerakhir.classList.contains("active") === false) {
+                indikatorMasihBerlangsung.classList.toggle("active")
+                indikatorSudahBerakhir.classList.toggle("active")
+            }
         })
 
-
-        indikatorMasihBerlangsung.forEach((IMB) => {
-            IMB.addEventListener("click", () => {
-                masihBerlangsung.forEach((MB) => {
-                    MB.style.display = "flex"
-                })
-
-                sudahBerakhir.forEach((SB) => {
-                    SB.style.display = "none"
-                })
-            })
+        indikatorMasihBerlangsung.addEventListener("click", (e) => {
+            masihBerlangsung.style.display = "flex"
+            //Masih Berlangsung Sudah Berakhir
+            sudahBerakhir.style.display = "none"
+            if (indikatorMasihBerlangsung.classList.contains("active") === false) {
+                indikatorMasihBerlangsung.classList.toggle("active")
+                indikatorSudahBerakhir.classList.toggle("active")
+            }
         })
     </script>
 
