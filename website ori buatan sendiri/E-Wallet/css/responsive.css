@@ -1,0 +1,1123 @@
+@media(min-width:1500px) {
+    header nav ul li a {
+        font-size: 1.5rem;
+        margin: 0 20px;
+    }
+
+    header .container nav ul li a {
+        margin: 0 0px;
+    }
+
+
+    .container {
+        max-width: 1340px;
+        /* background-color: red; */
+    }
+
+    .container.header {
+        max-width: 1740px;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    section,
+    footer,
+    header {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .homeHero {
+        height: 60vh;
+    }
+
+
+    .containerClient {
+        border-top-right-radius: 100px;
+    }
+
+    .containerKerjasama .container {
+        border-top-left-radius: 100px;
+    }
+
+    .contentArtikel .container .thumbnail {
+        height: 500px;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    /* Artikel */
+    .artikel .perArtikel {
+        width: calc(93%/2);
+    }
+
+
+    .heroArtikel .container {
+        width: 100%;
+    }
+
+    /* Artikel */
+
+}
+
+@media (max-width: 1000px) {
+
+    article,
+    header,
+    article,
+    section .containerKerjasama .container {
+        padding: 0 50px;
+    }
+
+    .containerKerjasama .container .caption {
+        width: 100%;
+        margin-right: 20px;
+    }
+
+
+
+    /* Per Artikel */
+    .contentArtikel .container .thumbnail {
+        height: 270px;
+    }
+
+    .contentArtikel .content {
+        width: 100%;
+    }
+
+    .rekomendasiArtikel .perArtikel {
+        width: calc(93%/2);
+    }
+
+    /* Per Artikel */
+
+    /* Event */
+
+    .Event .container .program .masihBerlangsung .perMasihBerlangsung {
+        margin: 10px 5px;
+    }
+
+    .Event .container .program .masihBerlangsung .perMasihBerlangsung .date p {
+        font-size: .9rem;
+    }
+
+    .Event .container .program .masihBerlangsung .perMasihBerlangsung .btn button {
+        font-size: .9rem;
+    }
+
+    /* Event */
+
+}
+
+
+@media(max-width:900px) {
+
+    article,
+    header,
+    section,
+    footer,
+    .containerKerjasama .container {
+        padding: 0 25px;
+    }
+
+
+    /* event */
+
+    .Event .container .sorting {
+        width: 40%;
+    }
+
+    .Event .container .program {
+        width: 60%;
+    }
+
+    .Event .container .program .masihBerlangsung .perMasihBerlangsung {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .Event .container .program .masihBerlangsung .perMasihBerlangsung .btn button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    /* event */
+
+
+
+    /* Halaman Detail Event start */
+    .contentEvent {
+        height: 100%;
+    }
+
+    .contentEvent .container {
+        flex-wrap: wrap-reverse;
+    }
+
+    .contentEvent .container .caption {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contentEvent .container .caption h1 {
+        font-size: 2rem;
+        font-weight: 650;
+        line-height: 45px;
+        margin: 30px 0;
+    }
+
+    .contentEvent .container .caption p {
+        font-size: 1.2rem;
+    }
+
+    .contentEvent .container .img {
+        width: 100%;
+        height: 300px;
+    }
+
+
+
+
+
+    .detailEvent .container {
+        flex-wrap: wrap;
+    }
+
+    .detailEvent .container .detailAcara {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-right: 0px;
+    }
+
+
+    .detailEvent .container .detailHarga {
+        width: 100%;
+        position: static;
+        top: 0;
+    }
+
+
+
+    .detailEvent .container .detailHarga button {
+        padding: 15px;
+    }
+
+    /* Halaman Detail Event end */
+
+}
+
+
+@media(max-width:800px) {
+
+
+    .containerClient {
+        border-top-left-radius: 0;
+        padding-bottom: 50px;
+    }
+
+    .containerClient .clientTitle {
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .containerClient .clientTitle h2 {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .containerClient .clientTitle p {
+        width: 100%;
+    }
+
+    .containerKerjasama {
+        padding: 0 25px;
+        background-color: #111827;
+    }
+
+    .containerKerjasama .container {
+        width: 100%;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 50px 0;
+        border-top-right-radius: 0;
+        background-color: transparent;
+    }
+
+    .containerKerjasama .container .caption {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .footer {
+        margin: 0;
+        background-color: #111827;
+    }
+
+    .footer .container {
+        width: 100%;
+        padding: 0 15px;
+        background-color: transparent;
+    }
+
+    footer {
+        background-color: #111827;
+    }
+
+    footer .container {
+        width: 100%;
+        font-size: 1rem;
+        border-radius: 0;
+        padding-left: 0;
+        justify-content: center;
+        text-align: center;
+        background-color: transparent;
+    }
+
+
+    /* Artikel */
+    .heroArtikel {
+        margin-bottom: 30px;
+    }
+
+    .subArtikel {
+        font-size: 1.5rem;
+        margin: 20px 0;
+    }
+
+    .artikelPilihan .bigArtikel {
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+
+    .artikelPilihan .bigArtikel img {
+        width: 100%;
+        border-radius: 10px;
+        height: 300px;
+    }
+
+    .artikelPilihan .bigArtikel:hover img {
+        transform: scale(1);
+    }
+
+    .artikelPilihan .bigArtikel .detailArtikel {
+        width: 100%;
+        padding: 20px 20px 30px 20px;
+    }
+
+    /* Artikel */
+
+
+
+    /* event */
+    .heroEvent .container form {
+        width: 100%;
+    }
+
+    .keteranganProgram span {
+        font-size: .9rem;
+        padding: 20px 10px;
+    }
+
+    /* event */
+
+
+
+    /* Login */
+    .containerLogin .container .login {
+        width: 80%;
+    }
+
+    .containerLogin .container h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Login */
+
+
+    /* Detail Event */
+
+    .containerModal .modal {
+        width: 100%;
+    }
+
+    /* Detail Event */
+
+
+}
+
+@media(max-width:700px) {
+
+    header nav {
+        display: none;
+    }
+
+    /* Event */
+    .heroEvent .container h1 {
+        font-size: 1.9rem;
+        font-weight: 700;
+    }
+
+    .heroEvent .container p {
+        font-size: 1rem;
+    }
+
+    .Event .sorting {
+        display: none;
+    }
+
+    .Event .container .program {
+        width: 100%;
+        padding: 0;
+    }
+
+    .keteranganProgram {
+        display: flex;
+        position: inherit;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 4px solid #e4e4e7;
+        margin-bottom: 20px;
+        padding: 10px 0;
+    }
+
+    .keteranganProgram span {
+        width: 50%;
+        text-align: center;
+        font-size: 1rem;
+        padding: 0 20px;
+        position: relative;
+    }
+
+    .sortingMobile {
+        display: inherit;
+    }
+
+    .Event .program .masihBerlangsung .perMasihBerlangsung img {
+        height: 350px;
+    }
+
+    .Event .program .masihBerlangsung .perMasihBerlangsung h2 {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    .Event .program .masihBerlangsung .perMasihBerlangsung h3 {
+        font-size: 1.5rem
+    }
+
+    .Event .program .masihBerlangsung .perMasihBerlangsung p {
+        font-size: 1.1rem;
+    }
+
+    /* Event */
+
+
+    /* Login */
+    .containerLogin .container .login {
+        width: 100%;
+    }
+
+    .containerLogin .container h1 {
+        font-size: 2rem;
+    }
+
+    /* Login */
+
+
+
+
+
+    /* Per Artikel */
+    .contentArtikel .container .thumbnail {
+        height: 250px;
+    }
+
+
+
+    .containerArtikelLainnya .artikelLainnya {
+        flex-wrap: wrap;
+    }
+
+    .containerArtikelLainnya .artikelLainnya .perArtikelLainnya {
+        width: calc(100%/2);
+    }
+
+    .containerArtikelLainnya .artikelLainnya .perArtikelLainnya img {
+        height: 120px;
+    }
+
+    .rekomendasiArtikel .perArtikel {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .contentArtikel .author .authorDetail p {
+        display: none;
+
+    }
+
+    /* Per Artikel */
+
+}
+
+@media(max-width:650px) {
+    .artikel .perArtikel {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .artikel .perArtikel img {
+        height: 300px;
+    }
+
+    .artikel .perArtikel .detailArtikel {
+        padding-bottom: 40px;
+    }
+}
+
+@media(max-width:500px) {
+
+    form .input-group button {
+        width: 25%;
+    }
+
+    form textarea,
+    form input {
+        font-size: .8rem;
+    }
+
+    article,
+    header,
+    section,
+    footer,
+    .containerKerjasama {
+        padding: 0 15px;
+    }
+
+    .footer .container {
+        padding: 0;
+    }
+
+    .containerClient .clientTitle p {
+        font-size: 1.2rem;
+    }
+
+
+    .containerKerjasama .container .caption h2 {
+        font-size: 2rem;
+        line-height: 45px;
+    }
+
+    .containerKerjasama .container .caption p {
+        font-size: 1.1rem;
+    }
+
+
+    /* Event */
+    .Event .program .masihBerlangsung .perMasihBerlangsung img {
+        height: 200px;
+    }
+
+    /* Event */
+
+
+    /* Detail Event Start */
+
+    .detailEvent .container .detailAcara .waktuPelaksanaan .date {
+        flex-wrap: wrap;
+    }
+
+    .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal p,
+    .detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu p {
+        font-size: 1rem;
+    }
+
+    .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal .icon,
+    .detailEvent .container .detailAcara .waktuPelaksanaan .date .waktu .icon {
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+
+
+    .detailEvent .container .detailAcara .waktuPelaksanaan .date .tanggal p {
+        margin-bottom: 15px;
+    }
+
+
+    .detailEvent .container .tentangPembicara .orang .profilOrang img {
+        width: 70px;
+        height: 60px;
+    }
+
+    /* Detail Event End */
+
+
+
+    /* Detail Artikel */
+    .content .identitas {
+        flex-wrap: wrap;
+    }
+
+    .content .identitas .perIdentitas {
+        width: 100%;
+        margin: 0;
+    }
+
+    /* Detail Artikel */
+
+
+    /* Artikel */
+    .heroArtikel ul li p {
+        padding: 5px 20px;
+        font-size: 13px;
+    }
+
+    .heroArtikel h1 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+
+    .artikelPilihan .bigArtikel img {
+        height: 200px;
+    }
+
+    .artikel .perArtikel img {
+        height: 200px;
+    }
+
+
+    /* Artikel */
+
+}
+
+@media(max-width:450px) {
+
+    /* event */
+    .heroEvent .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .heroEvent .container p {
+        font-size: .9rem;
+    }
+
+
+    .sortingMobile .filter .containerFilter .boxFilter .btn {
+        flex-wrap: wrap-reverse;
+    }
+
+    .sortingMobile .filter .containerFilter .boxFilter .btn button {
+        margin: 0;
+        width: 100%;
+        padding: 8px 10px;
+    }
+
+    .sortingMobile .filter .containerFilter .boxFilter .btn button:first-child {
+        margin-top: 10px;
+    }
+
+    /* event */
+
+
+
+
+
+
+    /* Login */
+
+    .containerLogin .container h1 {
+        font-size: 1.5rem;
+    }
+
+    .containerLogin .container .login h2 {
+        font-size: 1.3rem;
+    }
+
+    .containerLogin .container .login p {
+        font-size: 1rem;
+        line-height: 22px;
+    }
+
+    /* Login */
+
+
+
+    /* Per Artikel */
+
+    .contentArtikel .container .titleArtikel {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    .contentArtikel .container .writer {
+        font-size: .8rem;
+        line-height: 20px;
+    }
+
+    .contentArtikel .container h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Per Artikel */
+
+
+
+    /* Halaman Detail Event Start */
+
+    .contentEvent .container .caption h2 {
+        font-size: 1.6rem;
+    }
+
+    .contentEvent .container .caption h1 {
+        font-size: 1.4rem;
+        line-height: 30px;
+    }
+
+    .contentEvent .container .caption p {
+        font-size: 1rem;
+    }
+
+    .contentEvent .container .img {
+        height: 200px;
+    }
+
+
+    .detailEvent .container .detailHarga button {
+        padding: 10px;
+    }
+
+    .detailEvent .container .tentangPembicara .orang {
+        padding: 0;
+        border: none;
+    }
+
+    .detailEvent .container .tentangPembicara .orang .profilOrang {
+        flex-wrap: wrap;
+    }
+
+    .detailEvent .container .tentangPembicara .orang .profilOrang img {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+
+    /* Halaman Detail Event End */
+}
+
+
+@media(max-width:400px) {
+
+
+    .containerKerjasama .container .caption h2,
+    .containerClient .clientTitle h2 {
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+        line-height: 30px;
+    }
+
+
+    .containerKerjasama .container .caption p,
+    .containerClient .clientTitle p {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    .footer .box h2 {
+        font-size: 1.7rem;
+    }
+
+    /* Event */
+
+    .sortingMobile .urutkan h2 {
+        margin-right: 50px;
+    }
+
+    .keteranganProgram span {
+        font-size: .9rem;
+    }
+
+
+
+
+    .Event .program .masihBerlangsung .perMasihBerlangsung .date .icon,
+    .Event .program .masihBerlangsung .perMasihBerlangsung .date p {
+        font-size: .9rem;
+    }
+
+
+
+    .Event .program .masihBerlangsung .perMasihBerlangsung h2 {
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+
+
+    /* Event */
+
+
+
+    /* Detail Event */
+
+    .content h3 {
+        font-size: 1.2rem !important;
+    }
+
+    .containerModal .modal .modal-footer {
+        flex-wrap: wrap;
+    }
+
+    .containerModal .modal .modal-footer button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .containerModal .modal .modal-footer h2 {
+        font-size: 1.1rem;
+        margin: 20px 0;
+    }
+
+
+    .containerModal .modal .modal-body form .form-group label {
+        font-size: .9rem;
+    }
+
+    /* Detail Event */
+
+
+    /* Artikel */
+
+    .artikel .perArtikel .detailArtikel {
+        padding-left: 15x;
+        padding-right: 15x;
+    }
+
+    .artikel .perArtikel .detailArtikel h3 {
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+
+    .kategori {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+
+    /* Artikel */
+
+
+
+
+    /* Detail Artikel */
+    .containerArtikelLainnya .artikelLainnya .perArtikelLainnya {
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    .containerArtikelLainnya .artikelLainnya .perArtikelLainnya p {
+        font-size: 1rem;
+        line-height: 23px;
+    }
+
+    .contentArtikel .author .authorDetail {
+        margin-left: 15px;
+    }
+
+    .contentArtikel .author img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contentArtikel .author .authorDetail h3 {
+        font-size: 1.1rem;
+        line-height: 15px;
+    }
+
+    .contentArtikel .author .authorDetail span {
+        font-size: .8rem;
+    }
+
+
+    .containerArtikelLainnya .artikelLainnya .perArtikelLainnya img {
+        height: 150px;
+    }
+
+    .containerArtikelLainnya .artikelLainnya .perArtikelLainnya p {
+        font-size: .9rem;
+        line-height: 1.3rem;
+
+    }
+
+
+    /* Detail Artikel */
+
+
+
+}
+
+@media(max-width:350px) {
+
+    footer .container p {
+        font-size: .9rem;
+    }
+
+    footer .container p span {
+        font-size: 1rem;
+    }
+
+    /* Event */
+
+    .heroEvent .container form button {
+        width: 30%;
+    }
+
+    .sortingMobile .filter .containerFilter .boxFilter .containerTitle .title .icon {
+        font-size: 1.2rem;
+    }
+
+    .sortingMobile .filter .containerFilter .boxFilter .containerTitle .title h4 {
+        font-size: 1.2rem;
+    }
+
+    .sortingMobile .filter .containerFilter .boxFilter .containerTitle .close {
+        font-size: 1.5rem;
+        padding: 0;
+        margin-top: -5px;
+    }
+
+
+    .Event .program .masihBerlangsung .perMasihBerlangsung p {
+        font-size: .9rem;
+    }
+
+    /* Event */
+
+
+
+
+    /* Login */
+    .containerLogin .container .login form .form-info label,
+    .containerLogin .container .login form .form-info a {
+        font-size: .9rem;
+    }
+
+    /* Login */
+
+
+
+
+
+    /* Halaman Detail Event Start */
+
+    .contentEvent .container .caption h2 {
+        font-size: 1.2rem;
+    }
+
+    .contentEvent .container .caption h1 {
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+
+    .contentEvent .container .caption p {
+        font-size: .9rem;
+    }
+
+    .contentEvent .container .img {
+        height: 170px;
+    }
+
+
+
+
+
+    .detailEvent .container .detailAcara .deskripsi p,
+    .detailEvent .container .detailAcara .deskripsi ol {
+        font-size: 1rem;
+        margin: 10px 0;
+    }
+
+    .detailEvent .container .detailAcara .deskripsi ol {
+        padding: 0 10px;
+    }
+
+    .detailEvent .container .detailAcara .deskripsi ol li {
+        padding: 5px;
+    }
+
+    /* Halaman Detail Event End */
+
+
+    /* Artikel */
+    .artikel .perArtikel .detailArtikel {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    /* Artikel */
+
+
+
+    /* Detail Artikel */
+    .content p {
+        line-height: 25px;
+        font-size: .9rem;
+    }
+
+    .share h4 {
+        font-size: .8rem;
+    }
+
+
+    .share .sosialMedia {
+        margin-left: 5px;
+    }
+
+    .share .sosialMedia .perSosialMedia {
+        width: 30px;
+        height: 30px;
+        font-size: 1rem;
+    }
+
+
+    .rekomendasiArtikel .perArtikel h3 {
+        font-size: 1rem;
+        padding: .4rem .5rem;
+    }
+
+    .rekomendasiArtikel .perArtikel .authorRekomendasiArtikel img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .rekomendasiArtikel .perArtikel .authorRekomendasiArtikel .detailAuthor {
+        margin-left: 10px;
+    }
+
+    .rekomendasiArtikel .perArtikel .authorRekomendasiArtikel .detailAuthor a {
+        font-size: .9rem;
+    }
+
+    .rekomendasiArtikel .perArtikel .authorRekomendasiArtikel .detailAuthor p {
+        font-size: .7rem;
+    }
+
+    .contentArtikel {
+        padding-bottom: 25px;
+    }
+
+    /* Detail Artikel */
+
+}
+
+@media(max-width:300px) {
+    .footer .box p {
+        font-size: .9rem;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+
+    footer .container p {
+        font-size: .8rem;
+    }
+
+
+    /* Event */
+    .keteranganProgram span {
+        font-size: .8rem;
+    }
+
+    .sortingMobile .filter,
+    .sortingMobile .urutkan {
+        width: 100%;
+    }
+
+    .sortingMobile .filter .tombol {
+        flex-direction: row-reverse;
+    }
+
+    .sortingMobile .urutkan {
+        margin-top: 20px;
+    }
+
+
+    .sortingMobile {
+        flex-wrap: wrap;
+    }
+
+    .sortingMobile .urutkan h2 {
+        margin-right: 10px;
+    }
+
+    .sortingMobile .filter .containerFilter .boxFilter .containerTitle .title .icon,
+    .sortingMobile .filter .containerFilter .boxFilter .containerTitle .title h4 {
+        font-size: 1rem;
+    }
+
+    .sortingMobile .filter .containerFilter .boxFilter .containerTitle .close {
+        font-size: 1.5rem;
+        padding: 0;
+        margin-top: -5px;
+    }
+
+
+
+    .Event .program .masihBerlangsung .perMasihBerlangsung h2 {
+        font-size: 1rem;
+        line-height: 20px;
+    }
+
+    .Event .program .masihBerlangsung .perMasihBerlangsung img {
+        height: 170px;
+    }
+
+    .Event .program .masihBerlangsung .perMasihBerlangsung h3 {
+        font-size: 1.2rem;
+    }
+
+
+    /* Event */
+
+
+
+    /* Per Artikel */
+
+    .contentArtikel .container .thumbnail {
+        height: 170px;
+    }
+
+    /* Per Artikel */
+
+
+
+
+    /* Halaman Detail Event Start */
+
+    .detailEvent .container .detailAcara .deskripsi p,
+    .detailEvent .container .detailAcara .deskripsi ol {
+        font-size: .9rem;
+    }
+
+
+    .detailEvent .container .tentangPembicara .orang p {
+        font-size: .9rem;
+    }
+
+    .detailEvent .container .tentangPembicara .orang .profilOrang img {
+        width: 100%;
+        border-radius: 10px;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+
+    /* Halaman Detail Event End */
+
+}

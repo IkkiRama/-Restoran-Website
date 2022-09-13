@@ -1,0 +1,39 @@
+Perbaiki Event BTN, Detail Event, Modal Filter Event
+
+
+
+
+
+496DDB -> biru ke unguan
+D16CE1 -> Pink
+
+
+
+
+
+Kelola Keuangan
+Lebih Simpel
+Solusi cerdas untuk memulai kehidupan yang lebih baik dan atur transaksi di satu dompet digital MoFlex.
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap');
+Gabung Sekarang
+
+
+Tentang MoFlex
+Mau bayar apapun jadi semudah lewat sentuhan jari. Lewat DANA, kamu bisa melakukan transaksi apapun dengan praktis mulai dari pembayaran tagihan, transaksi barcode scan, hingga e-commerce. #GantiDompet dan nikmati metode pembayaran yang lebih cepat, praktis dan aman.
+
+
+
+ 
+Hero Img Left diganti menjadi background image
+Lihat TOkopedia untuk mencari inspirasi
+
+
+
+
+
+
+Tentang MoFlex
+Membayar apa pun semudah mengetuk jari. Dengan MoFlex, Anda dapat melakukan hampir semua transaksi, mulai dari pembayaran tagihan, pemindaian barcode, hingga e-commerce. #ChangeDompet dan nikmati cara pembayaran yang lebih cepat, nyaman, dan aman.
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="40.939" height="40.939" viewBox="0 0 40.939 40.939" class="mb-2"><g id="mouse" transform="translate(0 20.47) rotate(-45)"><path id="Path_11136" data-name="Path 11136" d="M28.914.608A.848.848,0,0,0,27.86.035L23.737,1.253A3.268,3.268,0,0,0,21.459,5.2a1.593,1.593,0,0,1-.417,1.5l-.778.778a8.082,8.082,0,0,0-10.8.569L2.365,15.148A8.086,8.086,0,0,0,13.8,26.583l7.094-7.094a8.082,8.082,0,0,0,.569-10.8l.78-.78A3.3,3.3,0,0,0,23.1,4.791a1.577,1.577,0,0,1,1.109-1.91l4.127-1.22A.848.848,0,0,0,28.914.608ZM19.7,18.29,12.6,25.384a6.39,6.39,0,0,1-9.037-9.037l7.094-7.094a6.387,6.387,0,0,1,8.4-.56l-1.593,1.593a2.662,2.662,0,0,0-3.06.5l-1.279,1.279a2.662,2.662,0,0,0-.5,3.06l-.778.778a.848.848,0,0,0,1.2,1.2l.778-.778a2.66,2.66,0,0,0,3.06-.5l1.279-1.279a2.662,2.662,0,0,0,.5-3.06l1.593-1.593a6.387,6.387,0,0,1-.56,8.4Zm-2.733-4.944-1.279,1.279a.961.961,0,0,1-1.359-1.359L15.6,11.987a.961.961,0,0,1,1.359,1.359Z" fill="#393939"></path></g></svg>
